@@ -1,10 +1,12 @@
-const year = document.querySelector('#year');
-const languageButton = document.querySelector('.language');
+const html = document.documentElement;
+const langBtn = document.querySelector('.language');
 
-year.textContent = new Date().getFullYear();
-languageButton.addEventListener('click', () => {
-  document.body.classList.toggle('english');
-  const isEnglish = document.body.classList.contains('english');
-  document.documentElement.lang = isEnglish ? 'en' : 'zh-Hans';
-  languageButton.textContent = isEnglish ? 'EN / 中文' : '中文 / EN';
+langBtn.addEventListener('click', () => {
+  const next = html.dataset.lang === 'zh' ? 'en' : 'zh';
+  html.dataset.lang = next;
+  html.lang = next === 'zh' ? 'zh-Hans' : 'en';
+  langBtn.setAttribute('aria-pressed', String(next === 'en'));
+  langBtn.textContent = next === 'zh' ? '中文 / EN' : 'EN / 中文';
 });
+
+document.getElementById('year').textContent = new Date().getFullYear();
