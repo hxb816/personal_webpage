@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="你的名字的个人主页。" />
+    <title>你的名字 | Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">About</a><a href="#news">News</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </nav>
+      <header class="intro" id="about">
+        <div class="portrait" role="img" aria-label="你的个人头像位置"><span>YOUR<br />PHOTO</span></div>
+        <div class="bio">
+          <h1>你的名字</h1>
+          <p class="role">学生 / 创作者 / 你想成为的人</p>
+          <p class="place">Hong Kong · Available for new opportunities</p>
+          <p>你好！我是一名关注 <strong>设计、技术与日常生活</strong> 的创作者。目前在这里放着我的项目、经历和一些正在学习的事。</p>
+          <p>我相信有用的作品应当清晰、诚实，也带一点好奇心。</p>
+          <div class="links"><a href="mailto:hello@example.com">Email</a><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+        </div>
+      </header>
+      <section id="news"><h2>News</h2><ul class="news-list"><li><time>2026.10</time><span>这个个人网站正式上线。</span></li><li><time>2026.09</time><span>开始记录我的作品、灵感和学习进度。</span></li><li><time>2026.08</time><span>完成一个值得分享的新项目。</span></li></ul></section>
+      <section id="projects">
+        <h2>Selected Projects</h2><p class="section-note">以下内容均为可替换示例。添加项目时，复制一条 <code>&lt;article&gt;</code> 即可。</p>
+        <div class="project-list">
+          <article><div class="project-index">01</div><div><h3>项目名称：个人作品集</h3><p>这是一个项目的一句话介绍。说明你做了什么、为谁而做，以及它解决了什么问题。</p><p class="tags">2026 · Design · Web</p></div><a class="project-link" href="#">[project]</a></article>
+          <article><div class="project-index">02</div><div><h3>项目名称：正在构思中</h3><p>在这里展示你的第二个项目、文章、摄影系列、研究或任何让你感到骄傲的成果。</p><p class="tags">2026 · Personal</p></div><a class="project-link" href="#">[project]</a></article>
+          <article><div class="project-index">03</div><div><h3>项目名称：下一个章节</h3><p>这个位置留给你未来的计划。持续更新，个人网站会慢慢成为你的数字名片。</p><p class="tags">Coming soon</p></div><a class="project-link" href="#">[project]</a></article>
+        </div>
+      </section>
+      <section id="experience"><h2>Experience</h2><div class="timeline"><div><time>2025 — now</time><p><strong>你目前的身份</strong><br />学校、公司、组织或自由创作状态</p></div><div><time>2023 — 2025</time><p><strong>过往经历</strong><br />在这里简洁地介绍一个重要经历。</p></div></div></section>
+      <section id="contact" class="contact"><h2>Let’s connect</h2><p>欢迎因合作、想法或一句简单的问候联系我。</p><a class="email" href="mailto:hello@example.com">hello@example.com</a></section>
+      <footer>© <span id="year"></span> 你的名字 · Last updated: October 2026</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
