@@ -3,38 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="你的名字的个人主页。" />
-    <title>你的名字 | Personal Website</title>
+    <meta name="description" content="陈俞含的个人主页：计算机科学、项目与经历。" />
+    <title>陈俞含 | Yuhan Chen</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="page">
       <nav class="nav" aria-label="主导航">
-        <a href="#about">About</a><a href="#news">News</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        <div class="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#internship">Internship</a><a href="#campus">Campus</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+        <button class="language" type="button" aria-label="切换中英文">中文 / EN</button>
       </nav>
+
       <header class="intro" id="about">
-        <div class="portrait" role="img" aria-label="你的个人头像位置"><span>YOUR<br />PHOTO</span></div>
-        <div class="bio">
-          <h1>你的名字</h1>
-          <p class="role">学生 / 创作者 / 你想成为的人</p>
-          <p class="place">Hong Kong · Available for new opportunities</p>
-          <p>你好！我是一名关注 <strong>设计、技术与日常生活</strong> 的创作者。目前在这里放着我的项目、经历和一些正在学习的事。</p>
-          <p>我相信有用的作品应当清晰、诚实，也带一点好奇心。</p>
-          <div class="links"><a href="mailto:hello@example.com">Email</a><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+        <div class="portrait" role="img" aria-label="个人头像位置"><span>YU HAN<br />CHEN</span></div>
+        <div class="bio zh">
+          <h1>陈俞含 <span>Yuhan Chen</span></h1>
+          <p class="role">香港浸会大学 · 计算机科学本科生</p>
+          <p>我是一名计算机科学本科生，关注<strong>软件开发、数据分析与智能系统</strong>。我喜欢把课程中的理论转化为实际可用的项目，并持续探索技术如何改善真实世界的体验。</p>
+          <p>目前，我正在积累 Java、Python、SQL 与算法设计方面的实践经验，也乐于参与新的技术项目和学习机会。</p>
+          <div class="links"><a href="mailto:24262536@life.hkbu.edu.hk">Email</a><a href="https://github.com/hxb816" target="_blank" rel="noreferrer">GitHub</a></div>
+        </div>
+        <div class="bio en" lang="en">
+          <h1>Yuhan Chen <span>陈俞含</span></h1>
+          <p class="role">BSc Computer Science · Hong Kong Baptist University</p>
+          <p>I am a Computer Science undergraduate interested in <strong>software development, data analysis, and intelligent systems</strong>. I enjoy turning classroom theory into useful projects and exploring how technology can improve real-world experiences.</p>
+          <p>I am building practical experience in Java, Python, SQL, and algorithm design, and am always open to meaningful technical projects and learning opportunities.</p>
+          <div class="links"><a href="mailto:24262536@life.hkbu.edu.hk">Email</a><a href="https://github.com/hxb816" target="_blank" rel="noreferrer">GitHub</a></div>
         </div>
       </header>
-      <section id="news"><h2>News</h2><ul class="news-list"><li><time>2026.10</time><span>这个个人网站正式上线。</span></li><li><time>2026.09</time><span>开始记录我的作品、灵感和学习进度。</span></li><li><time>2026.08</time><span>完成一个值得分享的新项目。</span></li></ul></section>
+
       <section id="projects">
-        <h2>Selected Projects</h2><p class="section-note">以下内容均为可替换示例。添加项目时，复制一条 <code>&lt;article&gt;</code> 即可。</p>
-        <div class="project-list">
-          <article><div class="project-index">01</div><div><h3>项目名称：个人作品集</h3><p>这是一个项目的一句话介绍。说明你做了什么、为谁而做，以及它解决了什么问题。</p><p class="tags">2026 · Design · Web</p></div><a class="project-link" href="#">[project]</a></article>
-          <article><div class="project-index">02</div><div><h3>项目名称：正在构思中</h3><p>在这里展示你的第二个项目、文章、摄影系列、研究或任何让你感到骄傲的成果。</p><p class="tags">2026 · Personal</p></div><a class="project-link" href="#">[project]</a></article>
-          <article><div class="project-index">03</div><div><h3>项目名称：下一个章节</h3><p>这个位置留给你未来的计划。持续更新，个人网站会慢慢成为你的数字名片。</p><p class="tags">Coming soon</p></div><a class="project-link" href="#">[project]</a></article>
+        <h2>Selected Projects</h2>
+        <div class="project-list zh">
+          <article><div class="project-index">01</div><div><h3>Java 跑跑龟桌游开发与 AI 升级</h3><p>独立完成经典桌游的设计、开发与测试；以抽象类、接口与多态重构核心模块，并加入独立 AI 算法接口、Lambda 决策策略、特殊卡牌及人机/多 AI 对战模式。</p><p class="tags">Java · OOP · Algorithms</p></div></article>
+          <article><div class="project-index">02</div><div><h3>飞机订票系统：数据库设计与 Python 实现</h3><p>参与完成需求分析、Oracle 数据库建模、SQL 脚本、Python 接口及测试。系统包含 8 张核心表，并实现航班筛选、订票取消、订单管理与事务控制。</p><p class="tags">Python · Oracle SQL · Database Design</p></div></article>
+          <article><div class="project-index">03</div><div><h3>香港医院自助挂号系统模拟分析</h3><p>使用 Python 建立离散事件仿真模型，分析不同资源组合下的排队时间和系统吞吐量；通过近百次实验提出在成本约束下的资源配置方案。</p><p class="tags">Python · Simulation · Data Analysis</p></div></article>
+        </div>
+        <div class="project-list en" lang="en">
+          <article><div class="project-index">01</div><div><h3>Java Turtle Race Board Game & AI Upgrade</h3><p>Independently designed, developed, and tested a classic board game. Refactored core modules with abstract classes, interfaces, and polymorphism; added AI strategy modules, Lambda-based decisions, special cards, and human-versus-AI modes.</p><p class="tags">Java · OOP · Algorithms</p></div></article>
+          <article><div class="project-index">02</div><div><h3>Airline Booking System: Database & Python Implementation</h3><p>Contributed to requirements analysis, Oracle database modeling, SQL scripts, Python interfaces, and testing. The system includes eight core tables, flight filtering, bookings, cancellations, order management, and transaction control.</p><p class="tags">Python · Oracle SQL · Database Design</p></div></article>
+          <article><div class="project-index">03</div><div><h3>Hong Kong Hospital Registration Simulation</h3><p>Built a discrete-event simulation in Python to evaluate queues and throughput under different resource configurations, then proposed a cost-conscious allocation plan through nearly one hundred experiments.</p><p class="tags">Python · Simulation · Data Analysis</p></div></article>
         </div>
       </section>
-      <section id="experience"><h2>Experience</h2><div class="timeline"><div><time>2025 — now</time><p><strong>你目前的身份</strong><br />学校、公司、组织或自由创作状态</p></div><div><time>2023 — 2025</time><p><strong>过往经历</strong><br />在这里简洁地介绍一个重要经历。</p></div></div></section>
-      <section id="contact" class="contact"><h2>Let’s connect</h2><p>欢迎因合作、想法或一句简单的问候联系我。</p><a class="email" href="mailto:hello@example.com">hello@example.com</a></section>
-      <footer>© <span id="year"></span> 你的名字 · Last updated: October 2026</footer>
+
+      <section id="internship">
+        <h2><span class="zh">Internship Experience</span><span class="en">Internship Experience</span></h2>
+        <div class="timeline zh"><div><time>2026.05 — 2026.07</time><p><strong>轮臂机器人控制算法设计实习生 · 广东嘉腾机器人自动化有限公司</strong><br />参与机械臂轨迹规划、运动控制和模仿学习相关的算法分析与程序设计，并支持机器人控制模块的方案设计、实现、调试与优化。</p></div></div>
+        <div class="timeline en" lang="en"><div><time>May — Jul 2026</time><p><strong>Robotic-Arm Control Algorithm Design Intern · Guangdong Jaten Robot & Automation</strong><br />Supported algorithm analysis and implementation for trajectory planning, motion control, and imitation learning, as well as design, debugging, and optimization of robot-control modules.</p></div></div>
+      </section>
+
+      <section id="campus">
+        <h2><span class="zh">Campus Experience</span><span class="en">Campus Experience</span></h2>
+        <div class="timeline zh"><div><time>2024.09 — 至今</time><p><strong>科技与资讯干事 · 香港浸会大学登山社</strong><br />负责社团公众号、小红书与 Instagram 内容策划与运营；参与大型活动的推广、筹备与执行，并为招新活动设计线上报名及数据统计流程。</p></div></div>
+        <div class="timeline en" lang="en"><div><time>Sep 2024 — Present</time><p><strong>Information & Technology Officer · HKBU Mountaineering Association</strong><br />Planned and operated content across WeChat, Xiaohongshu, and Instagram; supported promotion, logistics, and execution for large-scale events, and designed online registration and data workflows.</p></div></div>
+      </section>
+
+      <section id="skills"><h2>Education & Skills</h2><div class="facts zh"><p><strong>香港浸会大学 · 计算机科学本科</strong><br />2024.09 — 至今 · GPA 3.75/4.0 · 专业前 10%</p><p><strong>技术</strong><br />Java · Python · C · SQL · 数据结构与算法 · 数据库设计 · 数据分析</p><p><strong>工具与语言</strong><br />Excel · Processing · Canva · 秀米 · 英语 · 普通话 · 基础法语</p></div><div class="facts en" lang="en"><p><strong>Hong Kong Baptist University · BSc Computer Science</strong><br />Sep 2024 — Present · GPA 3.75/4.0 · Top 10% in major</p><p><strong>Technical</strong><br />Java · Python · C · SQL · Data Structures & Algorithms · Database Design · Data Analysis</p><p><strong>Tools & Languages</strong><br />Excel · Processing · Canva · Xiumi · English · Mandarin · Basic French</p></div></section>
+
+      <section id="contact" class="contact"><div class="zh"><h2>Let’s connect</h2><p>欢迎因项目、实习或合作机会联系我。</p></div><div class="en" lang="en"><h2>Let’s connect</h2><p>Feel free to reach out for projects, internships, or collaboration.</p></div><a class="email" href="mailto:24262536@life.hkbu.edu.hk">24262536@life.hkbu.edu.hk</a></section>
+      <footer>© <span id="year"></span> Yuhan Chen · Hong Kong</footer>
     </main>
     <script src="script.js"></script>
   </body>
