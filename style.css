@@ -215,26 +215,53 @@ h2 {
 }
 
 /* --- 联系区与页脚 --- */
+/* --- 优化后的联系区样式 --- */
 .contact {
   background: var(--card-bg);
-  padding: 2.5rem;
-  border-radius: 12px;
+  padding: 4rem 2rem;
+  border-radius: 16px;
   border: 1px solid var(--border);
   text-align: center;
+  margin-top: 4rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
-.contact h2 {
+
+.contact-content h2 {
+  font-size: 2rem;
   border: none;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding-bottom: 0;
+  letter-spacing: -0.5px;
 }
+
 .contact p {
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
-.email {
+
+/* 漂亮的邮箱按钮 */
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--text-main);
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 500;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.email-btn:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  text-decoration: none;
+  color: #ffffff;
 }
 footer {
   text-align: center;
